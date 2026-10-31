@@ -91,6 +91,21 @@ Full text: `output/09_TRACK2_PROPOSAL.md`. Form-ready copy: `SUBMISSION.md`.
 Environment: UnvibeCode **0.3.15**, Windows 11 **10.0.26200**, Python **3.12.5**.
 Engine SHA-256: `b98412a824acd0872b05ea3b83d7b663f441db201c080b821dbd54917ef77387`.
 
+> **Prerequisite — install the wheel first.** The default `python` on this machine is
+> 3.13.14 with no `unvibecode` package, so `python repro\repro_gate.py` fails with
+> `ModuleNotFoundError: No module named 'shipreadyv2'`. Use a Python 3.12 venv outside
+> the repo:
+>
+> ```powershell
+> $v = "$env:TEMP\uvc-verify"
+> py -3.12 -m venv $v
+> & "$v\Scripts\python.exe" -m pip install "unvibecode==0.3.15"
+> & "$v\Scripts\python.exe" repro\repro_gate.py
+> ```
+>
+> Re-verified 31 October 2026: with that install both repros still produce the
+> outputs below, and the engine SHA-256 matches.
+
 ```powershell
 python repro\repro_gate.py
 # production files represented: 2/2 (100%)
@@ -153,6 +168,7 @@ Known related issues, all distinguished in §9 of the issue:
 | `monitor.py` | Checks issue, PyPI, duplicates, upstream commits |
 | `ISSUE_guardrails_checker_test_coverage.md` | Secondary draft, **not submitted** |
 | `FORM_PREFILL.local.txt` | Prefilled form URL; git-ignored because it contains the email |
+| `output/pdf/Cohort_3_Challenge_Beginner_Guide.pdf` | Reference PDF; currently **untracked** (not committed) |
 
 ## 8. Rules and gotchas
 
@@ -186,7 +202,7 @@ Exit `0` = nothing changed. Exit `1` = something needs attention.
 | Change | Action |
 |---|---|
 | New maintainer comment | Reply within a day; stay technical; accept a broader fix gracefully |
-| New release | Run `python repro\repro_gate.py`; if output changed, comment on #346 with version and result |
+| New release | Reinstall it in a 3.12 venv (see §5), then run `python repro\repro_gate.py`; if output changed, comment on #346 with version and result |
 | New matching issue | Decide if it is the same denominator bug; comment or ask to consolidate |
 | Issue closed as fixed | Re-run both repro scripts, confirm, thank the maintainer |
 | Results announced | 23 November 2026; check email and the challenge doc |
@@ -201,4 +217,5 @@ All submission work is committed and pushed to `main`. Check the exact head with
 git -C %USERPROFILE%\Downloads\unvibecode log --oneline -10
 ```
 
-Nothing is pending except monitoring.
+Nothing is pending except monitoring. The only local difference is the untracked
+reference PDF at `output/pdf/Cohort_3_Challenge_Beginner_Guide.pdf`.
