@@ -3,6 +3,7 @@
 **Deadline:** 15 November 2026, 11:59 PM IST
 **Results:** 23 November 2026
 **Form:** https://docs.google.com/forms/d/1an-hce3EQ8bUVArnZJnD1VwxQIxgmNzLKYQ8h814CVE/viewform
+**Form submitted:** 31 October 2026
 
 ---
 
@@ -97,11 +98,11 @@ Pick one and only if it is your own:
 - [x] Track 2 proposal written
 - [x] Feedback draft written (<200 words)
 - [x] Optional five-word options prepared
-- [ ] Name and email entered
-- [ ] Issue URL pasted: `https://github.com/FinanceFlash/unvibecode/issues/346`
-- [ ] Track 2 text pasted
-- [ ] Feedback pasted (rewritten in your own words)
-- [ ] Form submitted (requires Google sign-in)
+- [x] Name and email entered
+- [x] Issue URL pasted: `https://github.com/FinanceFlash/unvibecode/issues/346`
+- [x] Track 2 text pasted
+- [x] Feedback pasted (rewritten in your own words)
+- [x] Form submitted on 31 October 2026
 
 The only step that cannot be automated from this machine is the Google Forms
 submission, because it requires your Google account session.
