@@ -106,6 +106,11 @@ Pick one and only if it is your own:
 The only step that cannot be automated from this machine is the Google Forms
 submission, because it requires your Google account session.
 
+A prefilled URL — email, issue link, Track 2 text, feedback, five-word line, and
+confirmation — is stored in `FORM_PREFILL.local.txt`. That file is git-ignored
+because it contains your email. Open it, review every field, rewrite the feedback
+in your own voice, then submit.
+
 ---
 
 ## Reproduce the evidence
