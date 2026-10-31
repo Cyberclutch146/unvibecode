@@ -110,7 +110,7 @@ python repro\repro_run.py "<work dir>\b\run"
 The run artifacts used for `repro_run.py` were at:
 
 ```
-C:\Users\blazi\AppData\Local\Temp\uvc-hd0g1m3c\b\run
+%LOCALAPPDATA%\Temp\uvc-hd0g1m3c\b\run
 ```
 
 Run id: `target-unvibecode-analysis-20261026_150012`. Temporary files may be cleaned by
@@ -170,7 +170,7 @@ Known related issues, all distinguished in §9 of the issue:
 ## 9. How to resume
 
 ```powershell
-cd C:\Users\blazi\Downloads\unvibecode
+cd %USERPROFILE%\Downloads\unvibecode
 python monitor.py
 ```
 
@@ -198,7 +198,7 @@ Fork: https://github.com/Cyberclutch146/unvibecode
 All submission work is committed and pushed to `main`. Check the exact head with:
 
 ```powershell
-git -C C:\Users\blazi\Downloads\unvibecode log --oneline -10
+git -C %USERPROFILE%\Downloads\unvibecode log --oneline -10
 ```
 
 Nothing is pending except monitoring.
