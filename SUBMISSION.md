@@ -64,7 +64,7 @@ Full and alternate versions: [`output/09_TRACK2_PROPOSAL.md`](output/09_TRACK2_P
 Rewrite this in your own voice before pasting — the form asks for human feedback.
 
 ```text
-I ran UnvibeCode 0.3.15 on django-payments at 5607e9e. The Connected Code Map and
+I ran UnvibeCode 0.3.15 on https://github.com/jazzband/django-payments at commit 5607e9e. The Connected Code Map and
 Repository Context were fast and genuinely useful, and the business lane produced
 three evidence-backed findings. Two things slowed me down: a retry of the business
 run stopped with "hosted analysis credits exhausted", so I could not compare a

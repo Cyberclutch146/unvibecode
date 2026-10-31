@@ -171,7 +171,7 @@ https://docs.google.com/forms/d/1an-hce3EQ8bUVArnZJnD1VwxQIxgmNzLKYQ8h814CVE/vie
 
 ### 5a. Draft feedback (<200 words)
 
-> I ran UnvibeCode 0.3.15 on django-payments at `5607e9e`. The Connected Code Map and
+> I ran UnvibeCode 0.3.15 on https://github.com/jazzband/django-payments at commit `5607e9e`. The Connected Code Map and
 > Repository Context were fast and genuinely useful, and the business lane produced
 > three evidence-backed findings. Two things slowed me down: a retry of the business
 > run stopped with "hosted analysis credits exhausted", so I could not compare a second
