@@ -114,6 +114,33 @@ in your own voice, then submit.
 
 ---
 
+## If you come back later
+
+Run:
+
+```powershell
+python monitor.py
+```
+
+It reports, using public APIs only:
+
+- whether #346 is still open, has labels, or has new comments (prints the latest one)
+- whether PyPI has a release newer than **0.3.15**
+- whether a newly filed issue matches the submission's keywords (known related issues from §9 are listed separately)
+- the three newest commits on upstream `main`
+
+Exit code `0` means nothing changed. Exit code `1` means something needs a look.
+
+What to do if something changed:
+
+| Change | Action |
+|---|---|
+| New maintainer comment on #346 | Reply within a day; stay technical; agree if they want to fold it into a broader fix |
+| New UnvibeCode release | Run `python repro\repro_gate.py`; if output changed, comment on #346 with version and result |
+| Another issue matches the keywords | Check whether it is genuinely the same denominator bug; comment or ask to consolidate |
+| Issue closed as fixed | Run both repro scripts, confirm the fix, thank the maintainer |
+| Results announced (23 Nov) | Check the challenge doc and your email |
+
 ## Reproduce the evidence
 
 ```powershell
