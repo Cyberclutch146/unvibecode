@@ -1,5 +1,7 @@
 # Cohort 3 Submission — Status
 
+> **Resuming later?** Read [`context.md`](context.md) first, then run `python monitor.py`.
+
 **Deadline:** 15 November 2026, 11:59 PM IST
 **Results:** 23 November 2026
 **Form:** https://docs.google.com/forms/d/1an-hce3EQ8bUVArnZJnD1VwxQIxgmNzLKYQ8h814CVE/viewform
